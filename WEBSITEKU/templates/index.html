@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diva's Profile</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+    <!-- Include AOS Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+</head>
+
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                Diva's <span>Profile</span>
+            </div>
+            <div class="hamburg">&#9776;</div>
+            <div class="cancel">&#10005;</div>
+            <div class="links">
+                <a href="#home" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">Home</a>
+                <a href="#about" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">About</a>
+                <a href="#hobbies" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="400">Hobbies</a>
+                <a href="#musictaste" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="600">Music Taste</a>
+                <a href="#randomthoughts" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="600">Random Thoughts</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="Home">
+        <div class="content-wrapper">
+            <div class="image">
+                <img src="{{ url_for('static', filename='buat gambar/face.image.PNG') }}" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300">
+                
+            </div>
+            <div class="content">
+                <h1 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800">Hey I'm <span>Diva</span></h1>
+                <h2 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800">An electrical engineering <span>student</span></h2>
+                <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">I'm a 2nd semester electrical engineering student at Universitas Padjadjaran. But don't worry, this isn't a site full of formulas and circuits. This little space on the internet is just me expressing who I am. I hope you enjoy scrolling through and getting to know a piece of me! </p>
+                <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">Let's get to know me better!!</p> 
+            </div>
+    </section>
+
+    <section id="about">
+        <div class="content-wrapper">
+            <div class="image">
+                <img src="{{ url_for('static', filename='buat gambar/IMG_3303.PNG') }}" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300">
+            </div>
+            <div class="content">
+                <h1 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800">
+                    Let me share a bit <span>about myself!</span>
+                </h1>
+                <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
+                    Hi! I’m Diva, I’m the 2nd child out of two siblings, born on May 31st and raised in Batam .<br><br>I’m currently in my second semester as an electrical engineering student at Universitas Padjadjaran. Life lately is a mix of circuits, caffeine, and figuring things out one page of my journal at a time. My comfort food? Definitely dimsum mentai. If you ever need to bribe me, you know what to bring 😋
+                    I created this little space to share a side of me beyond lectures and lab reports. Hopefully, you’ll find a piece of me you can relate to—or at least vibe with!
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="hobbies" data-aos="fade-up" data-aos-duration="1000">
+        <h2>My Hobbies</h2>
+        <div class="content-wrapper">
+            <img src="{{ url_for('static', filename='buat gambar/singing.image.jpg') }}" alt="" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300">
+            <img src="{{ url_for('static', filename='buat gambar/journal.1.jpeg') }}" alt="" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500">
+            <img src="{{ url_for('static', filename='buat gambar/journal.2.jpeg') }}" alt="" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="700">
+            <p>Singing like nobody's listening, journaling my late-night thoughts, and crafting scrapbooks that are probably too cute to handle—those are my favorite ways to slow down and just enjoy being me!</p>
+        </div>
+    </section>
+
+    <section id="musictaste">
+        <div class="content">
+            <img src="{{ url_for('static', filename='buat gambar/music.image.jpg') }}" alt="" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300">
+            <h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">Music Taste</h2>
+            <p>My playlist is a cozy mix of jazz and R&B—smooth, soulful, and just the right kind of vibe for overthinking or daydreaming. Lately, I’ve been obsessed with “wrong abt forever” by Jeff Bernat, “Pink Matter” by Frank Ocean, and “Hold me down” by Daniel Caesar (on loop, no regrets 🎧).But honestly, there’s still so much jazz and R&B out there I haven’t even scratched the surface of. Always on the lookout for hidden gems and sounds that hit different.</p>
+        </div>
+    </section>
+
+    <section id="randomthoughts">
+        <h2>Random Thoughts</h2>
+        <div class="content">
+            <img src="{{ url_for('static', filename='buat gambar/thoughts.image.PNG') }}" alt="" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300" />
+            <img src="{{ url_for('static', filename='buat gambar/thoughts2.image.jpg') }}" alt="" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500" />
+            <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+                These are just some random thoughts I picked up from books or movies that hit a little too close to home.  
+                Sometimes words from somewhere else explain what I can’t put into words myself.
+            </p>
+        </div>
+    </section>
+    
+    
+    <section id="contact">
+        <div class="content">
+            <h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">Contact Me</h2>
+            <div class="social-icons" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+                <a href="https://www.instagram.com/diviacyaa?igsh=MTltcDYyb2I2aWJhZQ%3D%3D&utm_source=qr target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.tiktok.com/@anakindoh?_t=ZS-8viiBKgV9Oi&_r=1" target="_blank">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+                <a href="https://x.com/sillydivay?s=11" target="_blank">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="https://wa.me/+62895622838071" target="_blank">
+                    <i class="fa-brands fa-whatsapp"></i>
+        
+                </a>
+            </div>
+            <button data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800">Send Message</button>
+        </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
